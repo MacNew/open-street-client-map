@@ -62,7 +62,6 @@ public class MainApplication extends Application {
             builder.scheme(scheme).encodedAuthority(host + ":" + port).build();
             SharedPreferences.Editor editor = preferences.edit();
             editor.putString(MainFragment.KEY_URL, builder.toString());
-
             editor.remove("port");
             editor.remove("address");
             editor.remove("secure");

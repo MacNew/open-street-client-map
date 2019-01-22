@@ -1,10 +1,9 @@
-apply plugin: 'com.android.application'
+apply plugin: 'android-library'
 
 android {
     compileSdkVersion 28
 
     defaultConfig {
-        applicationId "org.traccar.client"
         buildConfigField "boolean", "HIDDEN_APP", "false"
         minSdkVersion 15
         targetSdkVersion 28
@@ -21,7 +20,6 @@ android {
         regular
         google
         hidden {
-            applicationId "org.traccar.client.hidden"
             buildConfigField "boolean", "HIDDEN_APP", "true"
         }
     }
